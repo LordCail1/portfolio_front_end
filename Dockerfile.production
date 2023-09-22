@@ -1,0 +1,22 @@
+FROM node:18
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install 
+
+COPY ./src ./src    
+COPY ./public ./public
+COPY next.config.js ./next.config.js
+COPY postcss.config.js ./postcss.config.js
+COPY tailwind.config.ts ./tailwind.config.ts
+COPY next-env.d.ts ./next-env.d.ts
+COPY tsconfig.json ./tsconfig.json 
+COPY .env.local ./.env.local
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm","run","start"]

@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:devUp": "./development.sh",
+    "docker:devUp:rebuild": "./development.rebuild.sh",
+    "docker:devDown": "./development.down.sh",
+    "docker:buildUp": "./production.sh",
+    "docker:buildUp:rebuild": "./production.rebuild.sh",
+    "docker:buildDown": "./production.down.sh"
   },
   "dependencies": {
     "@types/node": "20.6.3",
