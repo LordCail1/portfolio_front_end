@@ -1,9 +1,10 @@
 import { cn } from "@/lib/utils"
 
+
 export default function HeroText() {
 	return (
-		<div className="mb-10">
-			<h1 className="text text-6xl text-white mb-4">
+		<div className="mb-10 flex flex-col items-center">
+			<h1 className="text text-6xl text-white mb-4 inline-block">
 				{`Hi, I am `}
 				<ColoredText text="Rami Elbatnigi" />
 			</h1>
