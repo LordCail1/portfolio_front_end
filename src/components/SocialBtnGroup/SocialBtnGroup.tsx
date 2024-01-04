@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils"
-import { GithubIcon, LucideIcon, Twitter } from "lucide-react"
+import { Github, LucideIcon, LinkedinIcon } from "lucide-react"
+import Link from "next/link"
 
 /**
  * This is a group for social media buttons
@@ -7,8 +8,26 @@ import { GithubIcon, LucideIcon, Twitter } from "lucide-react"
 export default function SocialBtnGroup() {
 	return (
 		<div className="flex gap-4">
-			<SocialIcon socialIcon={GithubIcon} />
-			<SocialIcon socialIcon={Twitter} />
+			<Link
+				href={"https://github.com/LordCail1"}
+				target="_blank"
+			>
+				<SocialIcon
+					size={48}
+					socialIcon={Github}
+					strokeWidth={2}
+				/>
+			</Link>
+			<Link
+				href={"https://www.linkedin.com/in/rami-elbatnigi-836062200/"}
+				target="_blank"
+			>
+				<SocialIcon
+					size={48}
+					socialIcon={LinkedinIcon}
+					strokeWidth={2}
+				/>
+			</Link>
 		</div>
 	)
 }
@@ -16,12 +35,17 @@ export default function SocialBtnGroup() {
 type SocialIconProp = {
 	socialIcon: LucideIcon
 	className?: string
+	size?: number | string
+	strokeWidth?: number | string
 }
-function SocialIcon({ socialIcon: SocialIcon, className }: SocialIconProp) {
+
+function SocialIcon({ socialIcon: SocialIcon, className, size, strokeWidth }: SocialIconProp) {
 	return (
 		<SocialIcon
+			strokeWidth={strokeWidth}
+			size={size}
 			className={cn(
-				"h-11 w-11 cursor-pointer rounded-full p-2 text-white transition hover:bg-white hover:text-black",
+				"m-2 cursor-pointer rounded-xl p-2 text-white transition hover:bg-white hover:text-black",
 				className
 			)}
 		/>
