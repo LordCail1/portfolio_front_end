@@ -1,5 +1,8 @@
-import ServiceCard from "../ServiceCard/ServiceCard"
+import ServiceCard from "./ServiceCard/ServiceCard"
 
+/**
+ * This component returns the services section
+ */
 export default function ServicesSection() {
 	return (
 		<section className="relative flex flex-col items-center bg-nero pt-20 text-xs">
