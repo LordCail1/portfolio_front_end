@@ -1,5 +1,6 @@
 import { Langar } from "next/font/google"
 import Link from "next/link"
+import ColoredText from "../ColoredText/ColoredText"
 
 const langar = Langar({
 	display: "swap",
@@ -21,6 +22,10 @@ export default function Navbar() {
 				href={"/"}
 			>
 				Rami
+				<ColoredText
+					text="."
+					className="text-mint_morning"
+				/>
 			</Link>
 			<ul className="flex h-20 w-full items-center justify-end gap-6 pr-12">
 				<li className="cursor-pointer text-american_silver transition hover:text-american_silver/70">
