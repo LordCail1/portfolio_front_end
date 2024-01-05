@@ -12,7 +12,9 @@
     "docker:devDown": "./development.down.sh",
     "docker:buildUp": "./production.sh",
     "docker:buildUp:rebuild": "./production.rebuild.sh",
-    "docker:buildDown": "./production.down.sh"
+    "docker:buildDown": "./production.down.sh",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
@@ -26,7 +28,7 @@
     "eslint-config-next": "13.5.2",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.288.0",
-    "next": "13.5.2",
+    "next": "^13.5.2",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -36,7 +38,12 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.1.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "2.8",
-    "prettier-plugin-tailwindcss": "^0.4.1"
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "ts-node": "^10.9.2"
   }
 }
