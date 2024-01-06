@@ -12,7 +12,7 @@ type Props = {
  */
 export default function ServiceCard({ description, icon, title }: Props) {
 	return (
-		<article className="group basis-1/4 cursor-pointer flex-col items-center justify-center rounded-xl border border-solid border-mint_morning px-10 transition hover:bg-mint_morning">
+		<article className="basis-1/4 cursor-pointer flex-col items-center justify-center rounded-xl border border-solid border-mint_morning px-10 transition hover:bg-mint_morning/5">
 			<figure className="pt-6">
 				<Image
 					src={codeSymbol}
