@@ -8,7 +8,7 @@ import backgroundImage from "@/assets/background.png"
  */
 export default function HeroSection() {
 	return (
-		<section className="relative flex flex-col items-center justify-center py-96 bg-black opacity-[99%]">
+		<section className="relative flex flex-col items-center justify-center py-96 bg-black opacity-[99%] h-screen">
 			<Image
 				src={backgroundImage}
 				fill={true}
