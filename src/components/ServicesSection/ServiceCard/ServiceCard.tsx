@@ -1,7 +1,3 @@
-import codeSymbol from "@/assets/code-symbol.svg"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
-
 type Props = {
 	icon: string
 	title: string
@@ -19,10 +15,6 @@ export default function ServiceCard({ description, icon, title }: Props) {
 			}
 		>
 			<figure className="pt-6">
-				<Image
-					src={codeSymbol}
-					alt=""
-				/>
 				<h1 className="pb-20 text-4xl font-bold text-american_silver group-hover:text-black">
 					{title}
 				</h1>

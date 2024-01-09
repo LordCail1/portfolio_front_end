@@ -9,17 +9,9 @@ import ServiceCard from "./ServiceCard/ServiceCard"
 export default function ServicesSection() {
 	return (
 		<section
-			className="relative flex flex-col items-center bg-blue_island text-xs py-20"
+			className="relative flex flex-col items-center bg-blue_island text-xs"
 			id="services"
 		>
-			<Sectiontitle>SERVICES</Sectiontitle>
-			<SectionDescription>
-				{`What`}
-				<ColoredText
-					text=" I do"
-					className="text-mint_morning"
-				/>
-			</SectionDescription>
 			<div className="flex flex-wrap justify-center">
 				<ServiceCard
 					icon={""}
