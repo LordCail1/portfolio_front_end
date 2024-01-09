@@ -11,6 +11,25 @@
 			},
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "test watch",
+			"type": "shell",
+			"command": "npm run test:watch",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "run all",
+			"dependsOn": ["dev server", "test watch"],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			}
 		}
 	]
 }
