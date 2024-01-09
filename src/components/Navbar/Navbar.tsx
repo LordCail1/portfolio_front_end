@@ -13,7 +13,7 @@ const langar = Langar({
  */
 export default function Navbar() {
 	return (
-		<nav className="fixed z-10 flex h-20 w-full items-center bg-transparent">
+		<nav className="fixed z-10 flex h-20 w-full items-center bg-black">
 			<Link
 				className={
 					langar.className +
