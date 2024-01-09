@@ -15,7 +15,7 @@ export default function ServiceCard({ description, icon, title }: Props) {
 	return (
 		<article
 			className={
-				"group m-10 flex-grow basis-1/4 cursor-pointer flex-col items-center justify-center rounded-xl border border-solid border-mint_morning px-20 py-10 transition hover:bg-mint_morning"
+				"flex-grow basis-1/2 cursor-pointer flex-col items-center justify-center p-40 transition hover:bg-blue_island_hover"
 			}
 		>
 			<figure className="pt-6">
@@ -23,13 +23,13 @@ export default function ServiceCard({ description, icon, title }: Props) {
 					src={codeSymbol}
 					alt=""
 				/>
-				<h1 className="pb-11 text-2xl font-bold text-american_silver group-hover:text-black">
+				<h1 className="pb-20 text-4xl font-bold text-american_silver group-hover:text-black">
 					{title}
 				</h1>
 			</figure>
 			<div className="text-american_silver group-hover:text-black">
 				<hr className="w-1/2 group-hover:border-black" />
-				<p className="py-11 text-lg ">{description}</p>
+				<p className="py-20 text-lg ">{description}</p>
 			</div>
 		</article>
 	)

@@ -9,7 +9,7 @@ import ServiceCard from "./ServiceCard/ServiceCard"
 export default function ServicesSection() {
 	return (
 		<section
-			className="relative flex flex-col items-center bg-blue_island p-20 text-xs"
+			className="relative flex flex-col items-center bg-blue_island text-xs py-20"
 			id="services"
 		>
 			<Sectiontitle>SERVICES</Sectiontitle>
@@ -20,7 +20,7 @@ export default function ServicesSection() {
 					className="text-mint_morning"
 				/>
 			</SectionDescription>
-			<div className="flex flex-wrap justify-center gap-12">
+			<div className="flex flex-wrap justify-center">
 				<ServiceCard
 					icon={""}
 					title={"Full-Stack Web Development Services"}
