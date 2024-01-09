@@ -28,19 +28,19 @@ export default function ProjectsSection() {
 				<ProjectCard
 					src={virtualAssistantImage}
 					alt="Image of virtual assistant at work"
-					title="Virtual Assistant"
+					title="Virtual Assistant Website"
 					description="This is a virtual assistant that can do a lot of things. It can tell you the weather, play music, tell you a joke, and more."
 				/>
 				<ProjectCard
 					src={tarotAppImage}
 					alt="image of tarot cards"
-					title="Tarot App"
+					title="Tarot Reading Web App"
 					description="This is a tarot app that can tell you your fortune. It can tell you your past, present, and future."
 				/>
 				<ProjectCard
 					src={refugeeImage}
 					alt="Image of a refugee coming into the country"
-					title="Refugee App"
+					title="AI interviewer for Refugees"
 					description="This is a refugee app that can help refugees find jobs, housing, and more."
 				/>
 			</div>
