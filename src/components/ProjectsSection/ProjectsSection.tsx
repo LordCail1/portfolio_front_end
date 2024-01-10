@@ -24,7 +24,7 @@ export default function ProjectsSection() {
 				/>
 				{"."}
 			</SectionDescription>
-			<div className="flex">
+			<div className="flex flex-wrap">
 				<ProjectCard
 					src={virtualAssistantImage}
 					alt="Image of virtual assistant at work"

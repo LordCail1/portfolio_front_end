@@ -51,15 +51,15 @@ export default function ServiceCard({ description, icon, title }: Props) {
 				setIsHovered(false)
 			}}
 			className={
-				"group relative flex-grow basis-full cursor-pointer flex-col items-center justify-center px-40 py-40 transition hover:bg-blue_island_hover lg:px-72 xl:basis-1/2 xl:p-40"
+				"group relative flex-grow basis-full cursor-pointer flex-col items-center justify-center py-40 transition px-10 hover:bg-blue_island_hover sm:px-20 md:px-40 lg:px-72 xl:basis-1/2 xl:p-40"
 			}
 		>
 			<figure className="pt-6">
-				<h1 className="pb-20 text-4xl text-american_silver group-hover:text-white">{title}</h1>
+				<h1 className="text-center sm:text-left pb-20 text-4xl text-american_silver group-hover:text-white">{title}</h1>
 			</figure>
 			<div className="text-american_silver">
-				<hr className="w-1/2" />
-				<p className="py-20 text-lg ">{description}</p>
+				<hr className="sm:w-1/2" />
+				<p className="py-20 text-lg sm:text-left text-center">{description}</p>
 			</div>
 			<motion.div
 				animate={isHovered ? "visible" : "hidden"}
