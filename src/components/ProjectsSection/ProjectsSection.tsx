@@ -12,7 +12,7 @@ import virtualAssistantImage from "@/assets/projects/virtual-assistant.png"
 export default function ProjectsSection() {
 	return (
 		<section
-			className="relative flex flex-col items-center bg-blue_island py-20 text-xs"
+			className="relative flex flex-col items-center bg-blue_island pt-40 pb-10 text-xs"
 			id="projects"
 		>
 			<Sectiontitle>PROJECTS</Sectiontitle>
@@ -24,7 +24,13 @@ export default function ProjectsSection() {
 				/>
 				{"."}
 			</SectionDescription>
-			<div className="flex">
+			<div className="relative flex flex-wrap justify-center">
+				<ProjectCard
+					src={refugeeImage}
+					alt="Image of a refugee coming into the country"
+					title="AI interviewer for Refugees"
+					description="This is a refugee app that can help refugees find jobs, housing, and more."
+				/>
 				<ProjectCard
 					src={virtualAssistantImage}
 					alt="Image of virtual assistant at work"
@@ -36,12 +42,6 @@ export default function ProjectsSection() {
 					alt="image of tarot cards"
 					title="Tarot Reading Web App"
 					description="This is a tarot app that can tell you your fortune. It can tell you your past, present, and future."
-				/>
-				<ProjectCard
-					src={refugeeImage}
-					alt="Image of a refugee coming into the country"
-					title="AI interviewer for Refugees"
-					description="This is a refugee app that can help refugees find jobs, housing, and more."
 				/>
 			</div>
 		</section>
