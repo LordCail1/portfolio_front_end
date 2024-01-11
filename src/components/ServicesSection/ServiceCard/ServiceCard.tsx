@@ -45,7 +45,7 @@ export default function ServiceCard({ description, icon, title }: Props) {
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 			className={
-				"group relative flex-grow basis-full cursor-pointer flex-col items-center justify-center px-10 py-40 transition hover:bg-blue_island_hover sm:px-20 md:px-40 lg:px-72 xl:basis-1/2 xl:p-40"
+				"group relative flex-grow basis-full flex-col items-center justify-center px-10 py-40 transition hover:bg-blue_island_hover sm:px-20 md:px-40 lg:px-72 xl:basis-1/2 xl:p-40"
 			}
 		>
 			<figure className="pt-6">
