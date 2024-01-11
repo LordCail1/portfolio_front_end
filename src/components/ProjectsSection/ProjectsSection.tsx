@@ -12,7 +12,7 @@ import virtualAssistantImage from "@/assets/projects/virtual-assistant.png"
 export default function ProjectsSection() {
 	return (
 		<section
-			className="relative flex flex-col items-center bg-blue_island py-20 text-xs"
+			className="relative flex flex-col items-center bg-blue_island pt-40 pb-10 text-xs"
 			id="projects"
 		>
 			<Sectiontitle>PROJECTS</Sectiontitle>
