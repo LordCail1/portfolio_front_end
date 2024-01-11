@@ -3,7 +3,7 @@ import ColoredText from "@/components/ColoredText/ColoredText"
 export default function HeroText() {
 	return (
 		<div className="mb-10 flex flex-col items-center">
-			<h1 className="mx-20 mb-14 inline-block text-center text-3xl xsm:text-4xl md:text-6xl text-white">
+			<h1 className="mx-20 mb-14 inline-block text-center text-4xl md:text-6xl text-white">
 				{`Hi, I am `}
 				<ColoredText
 					text="Rami"
