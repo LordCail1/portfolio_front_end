@@ -14,7 +14,7 @@ type Props = {
  */
 export default function ProjectCard({ src, alt, title, description }: Props) {
 	return (
-		<article className={"group grow cursor-pointer p-24 hover:bg-eerie_black xl:basis-1/3"}>
+		<article className={"group grow cursor-pointer p-4 md:p-10 pb-24 lg:p-24 hover:bg-eerie_black xl:basis-1/3"}>
 			<Image
 				src={src}
 				alt={alt}

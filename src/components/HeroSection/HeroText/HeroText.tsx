@@ -4,7 +4,7 @@ export default function HeroText() {
 	return (
 		<div className="mb-10 flex flex-col items-center px-6 relative">
 			<h1 className="mb-14 inline-block text-center text-4xl md:text-6xl text-white">
-				{`Hi, I am `}
+				{`Hi, I'm `}
 				<ColoredText
 					text="Rami"
 					className="text-mint_morning"
