@@ -1,17 +1,16 @@
 "use client"
 import { Variants, motion } from "framer-motion"
-import { useState } from "react"
+import { ReactNode, useState } from "react"
 
 type Props = {
-	icon: string
-	title: string
+	title: ReactNode
 	description: string
 }
 
 /**
  * Those are the cards that contain the different services
  */
-export default function ServiceCard({ description, icon, title }: Props) {
+export default function ServiceCard({ description, title }: Props) {
 	const [isHovered, setIsHovered] = useState(false)
 
 	const horizontalVariant: Variants = {
@@ -45,7 +44,7 @@ export default function ServiceCard({ description, icon, title }: Props) {
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 			className={
-				"group relative flex-grow basis-full flex-col items-center justify-center py-10 px-10 md:py-40 transition hover:bg-blue_island_hover sm:px-20 md:px-40 lg:px-72 xl:basis-1/2 xl:p-40"
+				"group relative flex-grow basis-full flex-col items-center justify-center px-10 py-10 transition hover:bg-blue_island_hover sm:px-20 md:px-40 md:py-40 lg:px-72 xl:basis-1/2 xl:p-40"
 			}
 		>
 			<figure className="pt-6">
