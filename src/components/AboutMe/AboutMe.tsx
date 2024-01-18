@@ -3,6 +3,7 @@ import ColoredText from "../ColoredText/ColoredText"
 import SectionDescription from "../SectionDescription/SectionDescription"
 import Sectiontitle from "../SectionTitle/SectionTitle"
 import profilePicture from "@/assets/about-me/profile-picture.jpeg"
+import AboutMeSpecialShape from "./AboutMeSpecialShape/AboutMeSpecialShape"
 
 export default function AboutMe() {
 	return (
@@ -16,7 +17,7 @@ export default function AboutMe() {
 				/>
 				{"."}
 			</SectionDescription>
-			<div className="grid grid-cols-2 place-items-center gap-x-10 gap-y-40 relative">
+			<div className="relative grid grid-cols-2 place-items-center gap-x-10 gap-y-40">
 				<Image
 					src={profilePicture}
 					alt="profile picture"
@@ -43,8 +44,10 @@ export default function AboutMe() {
 						well-integrated and applications are thoroughly tested.
 					</p>
 				</div>
-				<div className="relative w-full h-full">
-					<div className="rounded-full w-28 h-28 bg-slate-200"></div>
+				<div className="relative flex gap-3 flex-wrap">
+					<AboutMeSpecialShape />
+					<AboutMeSpecialShape />
+					<AboutMeSpecialShape />
 				</div>
 			</div>
 
