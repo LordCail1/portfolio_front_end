@@ -3,14 +3,15 @@ import { Variants, motion } from "framer-motion"
 import { ReactNode, useState } from "react"
 
 type Props = {
-	title: ReactNode
 	description: string
+	text: string
+	title: ReactNode
 }
 
 /**
  * Those are the cards that contain the different services
  */
-export default function ServiceCard({ description, title }: Props) {
+export default function ServiceCard({ description, text, title }: Props) {
 	const [isHovered, setIsHovered] = useState(false)
 
 	const horizontalVariant: Variants = {
@@ -48,16 +49,13 @@ export default function ServiceCard({ description, title }: Props) {
 			}
 		>
 			<figure className="pt-6">
-				<h1 className="pb-20 text-center text-4xl text-american_silver group-hover:text-white sm:text-left">
+				<h1 className="pb-20 text-center text-4xl leading-relaxed text-american_silver group-hover:text-white sm:text-left">
 					{title}
 				</h1>
 			</figure>
 			<div className="text-american_silver">
-				<hr className="sm:w-1/2" />
-				<h3 className="pt-20 text-2xl font-extralight text-american_silver">
-					Crafting Cohesive Frontend and Backend Solutions
-				</h3>
-				<p className="pt-20 pb-0 text-center text-base leading-loose sm:text-left">{description}</p>
+				<h3 className="pt-20 text-2xl font-extralight text-american_silver">{description}</h3>
+				<p className="pb-0 pt-20 text-center text-base leading-loose sm:text-left">{text}</p>
 			</div>
 			<motion.div
 				animate={isHovered ? "visible" : "hidden"}
