@@ -48,6 +48,7 @@ export default function AboutMe() {
 					<AboutMeSpecialShape />
 					<AboutMeSpecialShape />
 					<AboutMeSpecialShape />
+					
 				</div>
 			</div>
 
