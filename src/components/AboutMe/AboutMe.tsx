@@ -1,22 +1,21 @@
 import Image from "next/image"
 import ColoredText from "../ColoredText/ColoredText"
-import SectionDescription from "../SectionDescription/SectionDescription"
-import Sectiontitle from "../SectionTitle/SectionTitle"
 import profilePicture from "@/assets/about-me/profile-picture.jpeg"
 import AboutMeSpecialShape from "./AboutMeSpecialShape/AboutMeSpecialShape"
 
 export default function AboutMe() {
 	return (
 		<section className="relative flex flex-col items-center bg-nero px-10 pb-10 pt-40 ">
-			<Sectiontitle>MY BIO</Sectiontitle>
-			<SectionDescription>
+			<span className="mb-4 text-base text-american_silver">MY BIO</span>
+			<h1 className="mb-12 text-3xl text-american_silver">
 				{"About "}
 				<ColoredText
 					text="me"
 					className="text-mint_morning"
 				/>
 				{"."}
-			</SectionDescription>
+			</h1>
+
 			<div className="relative grid grid-cols-2 place-items-center gap-x-10 gap-y-40">
 				<Image
 					src={profilePicture}
@@ -31,7 +30,7 @@ export default function AboutMe() {
 					user interfaces and robust backend services.
 				</p>
 				<div>
-					<SectionDescription>Expertise That Delivers</SectionDescription>
+					<h1 className="mb-12 text-3xl text-american_silver">Expertise That Delivers</h1>
 					<p className="w-2/3 text-xl leading-relaxed text-american_silver">
 						Equipped with a deep understanding of NextJS and React, I build intuitive, dynamic user
 						experiences that engage and delight. With the Redux Toolkit, I manage application state
@@ -44,11 +43,10 @@ export default function AboutMe() {
 						well-integrated and applications are thoroughly tested.
 					</p>
 				</div>
-				<div className="relative flex gap-3 flex-wrap">
+				<div className="relative flex flex-wrap gap-3">
 					<AboutMeSpecialShape />
 					<AboutMeSpecialShape />
 					<AboutMeSpecialShape />
-					
 				</div>
 			</div>
 
