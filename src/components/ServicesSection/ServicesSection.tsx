@@ -18,11 +18,11 @@ export default function ServicesSection() {
 								text="Full-Stack"
 								className="text-mint_morning"
 							/>
-							{" Web Development Services"}
+							{" Development"}
 						</>
 					}
 					description={
-						"Specializing in crafting high-performance, SEO-friendly web applications using React, Next.js, and modern web technologies tailored for startups to enterprise-level clients."
+						"Utilize the breadth of my full-stack development skills to create unified web applications. My expertise in developing responsive interfaces with React and Next.js, combined with backend proficiency using NestJS, ensures the delivery of cohesive and scalable solutions that support your business objectives and growth."
 					}
 				/>
 				<ServiceCard

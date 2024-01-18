@@ -54,7 +54,10 @@ export default function ServiceCard({ description, title }: Props) {
 			</figure>
 			<div className="text-american_silver">
 				<hr className="sm:w-1/2" />
-				<p className="py-20 text-center text-lg sm:text-left">{description}</p>
+				<h3 className="pt-20 text-2xl font-extralight text-american_silver">
+					Crafting Cohesive Frontend and Backend Solutions
+				</h3>
+				<p className="pt-20 pb-0 text-center text-base leading-loose sm:text-left">{description}</p>
 			</div>
 			<motion.div
 				animate={isHovered ? "visible" : "hidden"}
