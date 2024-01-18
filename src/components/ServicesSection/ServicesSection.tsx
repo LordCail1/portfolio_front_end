@@ -1,6 +1,3 @@
-import ColoredText from "../ColoredText/ColoredText"
-import SectionDescription from "../SectionDescription/SectionDescription"
-import Sectiontitle from "../SectionTitle/SectionTitle"
 import ServiceCard from "./ServiceCard/ServiceCard"
 
 /**
