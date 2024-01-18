@@ -1,3 +1,4 @@
+import ColoredText from "../ColoredText/ColoredText"
 import ServiceCard from "./ServiceCard/ServiceCard"
 
 /**
@@ -11,44 +12,87 @@ export default function ServicesSection() {
 		>
 			<div className="flex flex-wrap justify-center">
 				<ServiceCard
-					icon={""}
-					title={"Full-Stack Web Development Services"}
+					title={
+						<>
+							<ColoredText
+								text="Full-Stack"
+								className="text-mint_morning"
+							/>
+							{" Web Development Services"}
+						</>
+					}
 					description={
 						"Specializing in crafting high-performance, SEO-friendly web applications using React, Next.js, and modern web technologies tailored for startups to enterprise-level clients."
 					}
 				/>
 				<ServiceCard
-					icon={""}
-					title={"Redux State Management Expertise"}
+					title={
+						<>
+							<ColoredText
+								text="Redux"
+								className="text-mint_morning"
+							/>
+							{" State Management Expertise"}
+						</>
+					}
 					description={
 						"Offering advanced state management solutions with Redux Toolkit to streamline and maintain the state in complex web applications, enhancing scalability and maintainability."
 					}
 				/>
 				<ServiceCard
-					icon={""}
-					title={"NestJS Backend Development Services"}
+					title={
+						<>
+							<ColoredText
+								text="NestJS"
+								className="text-mint_morning"
+							/>
+							{" Backend Development Services"}
+						</>
+					}
 					description={
 						"Professional backend integration services using NestJS to create secure, scalable server-side applications with custom database design and cloud service integration."
 					}
 				/>
 				<ServiceCard
-					icon={""}
-					title={"Jest Automated Testing Solutions"}
+					title={
+						<>
+							<ColoredText
+								text="Jest"
+								className="text-mint_morning"
+							/>
+							{" Automated Testing Solutions"}
+						</>
+					}
 					description={
 						"Providing comprehensive automated testing services using Jest to deliver bug-free and reliable web applications, ensuring quality with every release."
 					}
 				/>
 				<ServiceCard
-					icon={""}
-					title={"AI Chatbot Integration Services"}
+					title={
+						<>
+							<ColoredText
+								text="AI Chatbot"
+								className="text-mint_morning"
+							/>
+							{" Integration Services"}
+						</>
+					}
 					description={
 						"Enhance your digital product with custom AI Chatbot integrations, leveraging OpenAI's ChatGPT to engage users with intelligent and interactive conversational experiences."
 					}
 				/>
 
 				<ServiceCard
-					icon={""}
-					title={"Custom API Integration and Development"}
+					title={
+						<>
+							{"Custom "}
+							<ColoredText
+								text="API Integration"
+								className="text-mint_morning"
+							/>
+							{" and Development"}
+						</>
+					}
 					description={
 						"Tailored API development services to facilitate seamless data exchange, third-party integrations, and extend the functionality of your web applications."
 					}
