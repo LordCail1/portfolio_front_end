@@ -45,7 +45,7 @@ export default function ServiceCard({ description, text, title }: Props) {
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 			className={
-				"group relative grid lg:w-2/3 gap-10 2sm:gap-0 grid-rows-4 2sm:grid-rows-3 items-start px-10 py-40 transition hover:bg-blue_island_hover sm:px-20 md:px-40 lg:px-20 xl:w-1/2 xl:p-32 2xl:w-auto 2xl:px-40"
+				"group relative grid lg:w-2/3 gap-10 2sm:gap-0 grid-rows-4 2sm:grid-rows-3 items-start px-10 py-40 transition hover:bg-blue_island_hover py-16 2sm:py-32 sm:px-20 md:px-40 lg:px-20 xl:w-1/2 xl:p-32 2xl:w-auto 2xl:px-40"
 			}
 		>
 			<figure>
