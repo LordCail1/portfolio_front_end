@@ -53,7 +53,7 @@ export default function ServiceCard({ description, text, title }: Props) {
 					{title}
 				</h1>
 			</figure>
-			<h3 className="text-2xl font-extralight text-american_silver">{description}</h3>
+			<h3 className="text-2xl font-extralight text-american_silver sm:text-left text-center">{description}</h3>
 			<p className="min-h-[160px] text-center text-base leading-loose text-american_silver sm:text-left">
 				{text}
 			</p>
