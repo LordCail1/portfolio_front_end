@@ -28,11 +28,11 @@ export default function ServicesSection() {
 			<ServiceCard
 				title={
 					<>
-						{"State Management "}
 						<ColoredText
-							text="Redux"
+							text="Redux "
 							className="text-mint_morning"
 						/>
+						{"State Management"}
 					</>
 				}
 				description="Simplifying Complex State with Redux"
