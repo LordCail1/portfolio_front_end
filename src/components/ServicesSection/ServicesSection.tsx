@@ -29,14 +29,14 @@ export default function ServicesSection() {
 				<ServiceCard
 					title={
 						<>
-							{"Advanced State Management with "}
+							{"State Management "}
 							<ColoredText
-								text="Redux Toolkit"
+								text="Redux"
 								className="text-mint_morning"
 							/>
 						</>
 					}
-					description="Simplifying Complex State with Redux Toolkit"
+					description="Simplifying Complex State with Redux"
 					text={
 						"Complex applications require robust state management. My advanced proficiency with Redux Toolkit streamlines state logic, enhances performance, and ensures a stable, scalable foundation for React applications."
 					}
