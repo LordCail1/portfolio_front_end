@@ -1,8 +1,6 @@
 import ColoredText from "../ColoredText/ColoredText"
 import ProjectCard from "../ProjectCard/ProjectCard"
 import refugeeImage from "@/assets/projects/refugee.png"
-import SectionDescription from "../SectionDescription/SectionDescription"
-import Sectiontitle from "../SectionTitle/SectionTitle"
 import tarotAppImage from "@/assets/projects/tarot-app.png"
 import virtualAssistantImage from "@/assets/projects/virtual-assistant.png"
 
@@ -12,18 +10,18 @@ import virtualAssistantImage from "@/assets/projects/virtual-assistant.png"
 export default function ProjectsSection() {
 	return (
 		<section
-			className="relative flex flex-col items-center bg-blue_island pt-40 pb-10 text-xs"
+			className="relative flex flex-col items-center bg-blue_island pb-10 pt-40 text-xs"
 			id="projects"
 		>
-			<Sectiontitle>PROJECTS</Sectiontitle>
-			<SectionDescription>
+			<span className="mb-4 text-base text-american_silver">PROJECTS</span>
+			<h1 className="mb-12 text-3xl text-american_silver">
 				{`Featured`}
 				<ColoredText
 					text=" Projects"
 					className="text-mint_morning"
 				/>
 				{"."}
-			</SectionDescription>
+			</h1>
 			<div className="relative flex flex-wrap justify-center">
 				<ProjectCard
 					src={refugeeImage}
