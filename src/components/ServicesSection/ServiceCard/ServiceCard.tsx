@@ -45,7 +45,7 @@ export default function ServiceCard({ description, text, title }: Props) {
 			onHoverStart={() => setIsHovered(true)}
 			onHoverEnd={() => setIsHovered(false)}
 			className={
-				"group relative grid flex-grow grid-rows-3 items-start px-10 py-10 transition hover:bg-blue_island_hover sm:px-20 md:px-40 md:py-40 lg:px-72 xl:basis-1/2 xl:p-40"
+				"group relative grid grid-rows-3 items-start px-10 py-10 transition hover:bg-blue_island_hover sm:px-20 md:px-40 md:py-40 lg:px-72 xl:px-96 xl:py-32 2xl:px-40"
 			}
 		>
 			<figure>
@@ -54,7 +54,7 @@ export default function ServiceCard({ description, text, title }: Props) {
 				</h1>
 			</figure>
 			<h3 className="text-2xl font-extralight text-american_silver">{description}</h3>
-			<p className="text-center text-base leading-loose text-american_silver sm:text-left">
+			<p className="min-h-[160px] text-center text-base leading-loose text-american_silver sm:text-left">
 				{text}
 			</p>
 			<motion.div
