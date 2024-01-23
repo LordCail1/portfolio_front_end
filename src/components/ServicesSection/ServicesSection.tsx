@@ -7,7 +7,7 @@ import ServiceCard from "./ServiceCard/ServiceCard"
 export default function ServicesSection() {
 	return (
 		<section
-			className="relative grid grid-cols-1 bg-blue_island text-xs 2xl:grid-cols-2"
+			className="relative grid grid-cols-1 justify-items-center bg-blue_island text-xs 2xl:grid-cols-2 2xl:justify-items-stretch"
 			id="services"
 		>
 			<ServiceCard
