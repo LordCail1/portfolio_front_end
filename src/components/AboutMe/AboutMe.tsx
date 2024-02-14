@@ -17,21 +17,25 @@ export default function AboutMe() {
 			</h1>
 
 			<div className="relative grid grid-cols-2 place-items-center gap-x-10 gap-y-40">
-				<Image
-					src={profilePicture}
-					alt="profile picture"
-					className="rounded-full border-4 border-solid border-transparent transition hover:border-mint_morning"
-				/>
-				<p className="p-20 text-xl leading-relaxed text-american_silver">
-					Hello! I’m a passionate web developer with a knack for creating seamless, high-performance
-					web applications. My journey in the tech world has been driven by my curiosity and my
-					eagerness to turn ideas into reality. Specializing in full-stack development, I have honed
-					my skills in an array of modern technologies, with a particular love for crafting reactive
-					user interfaces and robust backend services.
-				</p>
-				<div>
-					<h1 className="mb-12 text-3xl text-american_silver">Expertise That Delivers</h1>
-					<p className="w-2/3 text-xl leading-relaxed text-american_silver">
+				<div className="p-10">
+					<Image
+						src={profilePicture}
+						alt="profile picture"
+						className="rounded-full border-4 border-solid border-transparent transition hover:border-mint_morning"
+					/>
+				</div>
+				<div className="p-10">
+					<p className="text-xl leading-relaxed text-american_silver">
+						Hello! I’m a passionate web developer with a knack for creating seamless, high-performance
+						web applications. My journey in the tech world has been driven by my curiosity and my
+						eagerness to turn ideas into reality. Specializing in full-stack development, I have honed
+						my skills in an array of modern technologies, with a particular love for crafting reactive
+						user interfaces and robust backend services.
+					</p>
+				</div>
+				<div className="flex flex-col justify-center p-10">
+					<h1 className="mb-12 text-4xl text-white">Expertise That Delivers</h1>
+					<p className="text-xl leading-relaxed text-american_silver">
 						Equipped with a deep understanding of NextJS and React, I build intuitive, dynamic user
 						experiences that engage and delight. With the Redux Toolkit, I manage application state
 						with precision, ensuring smooth and predictable app behavior. My proficiency in
@@ -44,9 +48,11 @@ export default function AboutMe() {
 					</p>
 				</div>
 				<div className="relative flex flex-wrap gap-3">
-					<AboutMeSpecialShape />
-					<AboutMeSpecialShape />
-					<AboutMeSpecialShape />
+					<div>
+						<AboutMeSpecialShape />
+						<AboutMeSpecialShape />
+						<AboutMeSpecialShape />
+					</div>
 				</div>
 			</div>
 
