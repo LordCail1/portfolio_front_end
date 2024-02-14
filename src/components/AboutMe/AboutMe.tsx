@@ -16,7 +16,7 @@ export default function AboutMe() {
 				{"."}
 			</h1>
 
-			<div className="relative grid grid-cols-2 place-items-center gap-x-10 gap-y-40">
+			<div className="relative grid grid-cols-1 lg:grid-cols-2 place-items-center gap-x-10 gap-y-40">
 				<div className="p-10">
 					<Image
 						src={profilePicture}
@@ -24,7 +24,7 @@ export default function AboutMe() {
 						className="rounded-full border-4 border-solid border-transparent transition hover:border-mint_morning"
 					/>
 				</div>
-				<div className="p-10">
+				<div className="lg:p-10 px-40">
 					<p className="text-xl leading-relaxed text-american_silver">
 						Hello! I’m a passionate web developer with a knack for creating seamless, high-performance
 						web applications. My journey in the tech world has been driven by my curiosity and my
@@ -33,7 +33,7 @@ export default function AboutMe() {
 						user interfaces and robust backend services.
 					</p>
 				</div>
-				<div className="flex flex-col justify-center p-10">
+				<div className="flex flex-col justify-center lg:p-10 px-40">
 					<h1 className="mb-12 text-4xl text-white">Expertise That Delivers</h1>
 					<p className="text-xl leading-relaxed text-american_silver">
 						Equipped with a deep understanding of NextJS and React, I build intuitive, dynamic user
